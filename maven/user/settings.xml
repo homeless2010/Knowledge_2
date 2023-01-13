@@ -1,0 +1,25 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"   xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.1.0 http://maven.apache.org/xsd/settings-1.1.0.xsd">
+    <profiles>      
+        <profile>      
+            <id>dev</id>      
+            <repositories>        
+                <repository>          
+                    <id>dev</id>          
+                    <name>Local Development Repository</name>    
+                    <releases>           
+                        <enabled>true</enabled>          
+                    </releases>          
+                    <snapshots>            
+                        <enabled>true</enabled>          
+                    </snapshots>          
+                    <url>http://nexus.365power.cn/nexus/content/groups/public/</url>          
+                    <layout>default</layout>        
+                </repository>      
+            </repositories>    
+        </profile>  
+    </profiles>       
+    <activeProfiles>    
+        <!--<activeProfile>dev</activeProfile>-->  
+    </activeProfiles>
+    <localRepository>E:/m2/repository</localRepository>
+</settings>
